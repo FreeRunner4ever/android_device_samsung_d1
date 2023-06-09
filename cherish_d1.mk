@@ -36,14 +36,17 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
 
+## Fingerprint Animations
+EXTRA_UDFPS_ANIMATIONS := true
+
 ## Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := lineage_d1
+PRODUCT_NAME := cherish_d1
 PRODUCT_DEVICE := d1
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N970F
