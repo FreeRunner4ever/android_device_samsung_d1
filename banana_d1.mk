@@ -42,9 +42,6 @@ BANANA_MAINTAINER := FrEeRuNnEr4EvEr
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_HAS_UDFPS := true
 
-## Inherit viper4android
-$(call inherit-product, vendor/v4afx/config.mk)
-
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
