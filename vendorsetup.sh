@@ -6,11 +6,11 @@ git clone https://github.com/FreeRunner4ever/android_kernel_samsung_exynos9820 k
 
 # Common tree for exynos9820-common
 rm -rf device/samsung/exynos9820-common
-git clone https://github.com/FreeRunner4ever/android_device_samsung_exynos9820-common device/samsung/exynos9820-common -b elixir
+git clone https://github.com/ProjectElixir-Devices/android_device_samsung_exynos9820-common device/samsung/exynos9820-common
 
 # Device tree for d1
 rm -rf device/samsung/d1
-git clone https://github.com/FreeRunner4ever/android_device_samsung_d1 device/samsung/d1 -b elixir
+git clone https://github.com/ProjectElixir-Devices/android_device_samsung_d1 device/samsung/d1
 
 # Vendor blobs for all exynos9820 devices
 rm -rf vendor/samsung
