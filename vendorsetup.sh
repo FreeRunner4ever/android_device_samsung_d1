@@ -23,3 +23,7 @@ git clone https://github.com/ProjectElixir-Devices/hardware_samsung hardware/sam
 # SLSI Sepolicy
 rm -rf device/samsung_slsi/sepolicy
 git clone https://github.com/FreeRunner4ever/android_device_samsung_slsi_sepolicy device/samsung_slsi/sepolicy
+
+# Sepolicy
+rm -rf device/aosp/sepolicy
+git clone https://github.com/crdroidandroid/android_device_crdroid_sepolicy device/aosp/sepolicy
