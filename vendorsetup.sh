@@ -17,10 +17,8 @@ rm -rf vendor/samsung
 git clone https://github.com/LeDrew2017/proprietary_vendor_samsung vendor/samsung
 
 # Hardware OSS parts for Samsung
-mv hardware/samsung/nfc
 rm -rf hardware/samsung
 git clone https://github.com/ProjectElixir-Devices/hardware_samsung hardware/samsung -b thirteen
-mv nfc hardware/samsung
 
 # SLSI Sepolicy
 rm -rf device/samsung_slsi/sepolicy
