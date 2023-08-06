@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The aospOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -36,14 +36,28 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
 
-## Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+## Inherit some common Elixir stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_GAPPS_ARCH := arm64
+WITH_GMS := true
+
+# Project-Elixir
+IS_PHONE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+ELIXIR_BUILD_TYPE := OFFICIAL
+ELIXIR_MAINTAINER := FrEeRuNnEr4EvEr
+BUILD_USERNAME := FrEeRuNnEr4EvEr
+BUILD_HOSTNAME := Elixir
 
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := lineage_d1
+PRODUCT_NAME := aosp_d1
 PRODUCT_DEVICE := d1
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N970F
